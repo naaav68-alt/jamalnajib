@@ -1,2 +1,119 @@
-# jamalnajib
-jamal ganteng
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for iconography -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .link-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-white flex items-center justify-center p-4">
+
+    <div class="max-w-md w-full space-y-8">
+        <!-- Profil Section -->
+        <div class="text-center space-y-4">
+            <div class="relative inline-block">
+                <!-- Gunakan URL gambar asli Anda di sini -->
+                <img 
+                    src="https://via.placeholder.com/150" 
+                    alt="Foto Profil" 
+                    class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 shadow-xl object-cover"
+                    id="profile-img"
+                >
+                <div class="absolute bottom-1 right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-slate-900"></div>
+            </div>
+            
+            <div class="space-y-1">
+                <h1 class="text-3xl font-bold tracking-tight">Nama Anda</h1>
+                <p class="text-blue-400 font-medium">Content Creator & Developer</p>
+                <p class="text-slate-400 text-sm max-w-xs mx-auto">
+                    Selamat datang di profil saya. Mari terhubung melalui media sosial di bawah ini!
+                </p>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="space-y-4">
+            <!-- YouTube -->
+            <a href="https://youtube.com/@username" target="_blank" rel="noopener noreferrer" class="link-card glass-card flex items-center p-4 rounded-2xl group">
+                <div class="bg-red-500/20 p-3 rounded-xl group-hover:bg-red-500/30 transition-colors">
+                    <i data-lucide="youtube" class="text-red-500"></i>
+                </div>
+                <div class="ml-4 flex-grow">
+                    <h2 class="font-semibold text-lg">YouTube Channel</h2>
+                    <p class="text-xs text-slate-400">Tonton konten terbaru saya</p>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-500"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="link-card glass-card flex items-center p-4 rounded-2xl group">
+                <div class="bg-pink-500/20 p-3 rounded-xl group-hover:bg-pink-500/30 transition-colors">
+                    <i data-lucide="instagram" class="text-pink-500"></i>
+                </div>
+                <div class="ml-4 flex-grow">
+                    <h2 class="font-semibold text-lg">Instagram</h2>
+                    <p class="text-xs text-slate-400">Ikuti aktivitas harian saya</p>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-500"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" class="link-card glass-card flex items-center p-4 rounded-2xl group">
+                <div class="bg-slate-700/50 p-3 rounded-xl group-hover:bg-slate-700/70 transition-colors">
+                    <i data-lucide="github" class="text-white"></i>
+                </div>
+                <div class="ml-4 flex-grow">
+                    <h2 class="font-semibold text-lg">GitHub</h2>
+                    <p class="text-xs text-slate-400">Lihat proyek open-source saya</p>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-500"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer" class="link-card glass-card flex items-center p-4 rounded-2xl group">
+                <div class="bg-green-500/20 p-3 rounded-xl group-hover:bg-green-500/30 transition-colors">
+                    <i data-lucide="message-circle" class="text-green-500"></i>
+                </div>
+                <div class="ml-4 flex-grow">
+                    <h2 class="font-semibold text-lg">WhatsApp</h2>
+                    <p class="text-xs text-slate-400">Hubungi untuk kerjasama</p>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 text-slate-500"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center pt-8">
+            <p class="text-slate-500 text-xs">
+                &copy; 2024 Nama Anda. Dibuat dengan ❤️
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
